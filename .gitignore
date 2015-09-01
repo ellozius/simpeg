@@ -1,0 +1,10 @@
+# MacOSX Ignore
+
+.DS_Store
+
+# Java Ignore
+*.class
+*.jar
+
+# Maven Ignore
+target
