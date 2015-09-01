@@ -49,5 +49,63 @@ public class Aparatur {
     mappedBy = "aparatur"
         )
     private List<PasFoto> daftarAparatur = new ArrayList<>();
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getNip() {
+        return nip;
+    }
+
+    public void setNip(String nip) {
+        this.nip = nip;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public Date getTgLahir() {
+        return tgLahir;
+    }
+
+    public void setTgLahir(Date tgLahir) {
+        this.tgLahir = tgLahir;
+    }
+
+    public String getTplahir() {
+        return tplahir;
+    }
+
+    public void setTplahir(String tplahir) {
+        this.tplahir = tplahir;
+    }
+
+    public String getJenisKelamin() {
+        return jenisKelamin;
+    }
+
+    public void setJenisKelamin(String jenisKelamin) {
+        this.jenisKelamin = jenisKelamin;
+    }
+
+    public List<PasFoto> getDaftarAparatur() {
+        return daftarAparatur;
+    }
+
+    public void setDaftarAparatur(List<PasFoto> daftarAparatur) {
+        this.daftarAparatur = daftarAparatur;
+    }
+    
+    
     
 }
