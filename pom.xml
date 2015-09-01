@@ -6,6 +6,9 @@
   <packaging>jar</packaging>
  
   <name>Aplikasi Manajemen Aparatur Sipil Negara</name>
+  <parent>
+  
+  </parent>
  
  <dependencies>
    
