@@ -14,7 +14,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 /**
  *
- * @author student2
+ * @author edy.zulyza@gmail.com
  */
 
 @Entity @Table(name = "table_user")
