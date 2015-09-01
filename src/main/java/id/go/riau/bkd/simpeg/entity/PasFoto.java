@@ -5,10 +5,13 @@
  */
 package id.go.riau.bkd.simpeg.entity;
 
+import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import org.hibernate.annotations.GenericGenerator;
 
@@ -17,25 +20,21 @@ import org.hibernate.annotations.GenericGenerator;
  * @author student2
  */
 
-@Entity @Table(name = "table_user")
-public class User {
+@Entity @Table(name = "table_pasfoto")
+public class PasFoto {
     
     @Id @GeneratedValue(generator ="uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     private String id;
     
-    @Column(nullable = false, unique = true, length = 18)
-    private String nip;
+    @ManyToOne
+    @JoinColumn(name = "id_aparatur", nullable = false)
+    private Aparatur aparatur;
     
-    @Column(nullable = false, unique = true)
-    private String email;
+    @Column(name = "nama_file", nullable = false, length = 100)
+    private String namaFile;
     
-    @Column(nullable = false, length = 150)
-    private String nama;
+    @Column(name = "tanggal_upload", nullable = false, length = 100)
+    private Timestamp tanggalUpload;
     
-    @Column(nullable = false, length = 1)
-    private String role;
-    
-    @Column(nullable = false, length = 1)
-    private String status;
 }
